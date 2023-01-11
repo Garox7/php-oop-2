@@ -14,8 +14,22 @@ $user1 = new User(
 );
 var_dump($user1);
 
-$product1 = new Product();
+echo('<hr>');
+
+$product1 = new Product(
+    '00001',
+    'Croccantini al Pesce',
+    8549,
+    'description',
+    234,
+    'Cibo'
+);
+$product1->setSalesMount(5, 8);
 var_dump($product1);
+var_dump($product1->isAvaiable());
+var_dump($product1->getPrice());
+
+echo('<hr>');
 
 ?>
 
