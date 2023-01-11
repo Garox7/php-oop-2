@@ -1,8 +1,21 @@
 <?php
 include __DIR__ . '/classes/User.php';
+include __DIR__ . '/classes/CreditCard.php';
+include __DIR__ . '/classes/Product.php';
 
-$user1 = new User('Mario', 'Rossi', 'Via Milano 1', 'f', 'BENVENUTO10', 'f');
+// USER
+$user1 = new User(
+    'Mario',
+    'Rossi',
+    'Via Milano 1',
+    new CreditCard(),
+    'BENVENUTO10',
+    'f'
+);
 var_dump($user1);
+
+$product1 = new Product();
+var_dump($product1);
 
 ?>
 

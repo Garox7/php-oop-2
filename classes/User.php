@@ -1,12 +1,12 @@
 <?php
 class User
 {
-    protected $firstName;
-    protected $lastName;
-    protected $address;
-    protected $creditCard;
-    protected $coupon;
-    protected $products;
+    protected string $firstName;
+    protected string $lastName;
+    protected string $address;
+    protected CreditCard $creditCard;
+    protected string $coupon;
+    protected array $products;
 
     public function __construct($_firstName, $_lastName, $_address, $_creditCard, $_coupon)
     {
