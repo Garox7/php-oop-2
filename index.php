@@ -1,3 +1,11 @@
+<?php
+include __DIR__ . '/classes/User.php';
+
+$user1 = new User('Mario', 'Rossi', 'Via Milano 1', 'f', 'BENVENUTO10', 'f');
+var_dump($user1);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
